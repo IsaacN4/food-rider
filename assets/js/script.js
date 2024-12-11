@@ -1,24 +1,27 @@
 'use strict';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiYmFjaGFyYWxoYW1hZGEiLCJhIjoiY2xxNmNjYWRjMDc0ejJpbno3cmNyZWN2ZSJ9.SJcOC6oDZhFYpJP5iKvq9A';
+mapboxgl.accessToken = 'pk.eyJ1Ijoid2VsbGZjIiwiYSI6ImNscTE5azY3eDAzeGwyaXIycTgyMnM0ZW8ifQ.0Bp9MRAu0DmdRpUI8lnDPg';
 
+const trackLocationButton = document.querySelector('.track-button');
 const mapContainer = document.querySelector('.tracking-map');
 
-navigator.geolocation.getCurrentPosition(success, error);
+trackLocationButton.addEventListener('click', () => {
+    navigator.geolocation.getCurrentPosition(success, error);
+});
 
 function success(position) {
     const { latitude, longitude } = position.coords;
 
     const map = new mapboxgl.Map({
         container: mapContainer, 
-        style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/mapbox/standard',
         center: [longitude, latitude], 
-        zoom: 12 
+        zoom: 10 
     });
 
     new mapboxgl.Marker()
         .setLngLat([longitude, latitude])
-        .addTo(map);
+        .addTo(map); 
 }
 
 function error() {
@@ -28,9 +31,9 @@ function error() {
 
     const map = new mapboxgl.Map({
         container: mapContainer, 
-        style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/mapbox/standard',
         center: defaultCoords,
-        zoom: 12
+        zoom: 10 
     });
 
     new mapboxgl.Marker()
