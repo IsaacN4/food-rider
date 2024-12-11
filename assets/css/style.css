@@ -130,6 +130,9 @@ h2 {
     color: #ffffff;
     box-shadow: 2px 2px 5px rgba(31, 14, 14, 0.438); 
 }
+ 
+
+/* Map Section */
 
 .map-container {
     display: flex;
@@ -143,6 +146,8 @@ h2 {
     width: 800px;
     border-radius: 10px;
 }
+
+
 
 /* Main Ends */
 
