@@ -6,8 +6,12 @@ const trackLocationButton = document.querySelector('.track-button');
 const mapContainer = document.querySelector('.tracking-map');
 
 trackLocationButton.addEventListener('click', () => {
-    navigator.geolocation.getCurrentPosition(success, error);
+    navigator.geolocation.getCurrentPosition(success, error, accuracy);
 });
+
+const accuracy = {
+    enableHighAccuracy:true
+}
 
 function success(position) {
     const { latitude, longitude } = position.coords;
@@ -16,7 +20,7 @@ function success(position) {
         container: mapContainer, 
         style: 'mapbox://styles/mapbox/standard',
         center: [longitude, latitude], 
-        zoom: 10 
+        zoom: 12 
     });
 
     new mapboxgl.Marker()
@@ -33,7 +37,7 @@ function error() {
         container: mapContainer, 
         style: 'mapbox://styles/mapbox/standard',
         center: defaultCoords,
-        zoom: 10 
+        zoom: 12
     });
 
     new mapboxgl.Marker()
