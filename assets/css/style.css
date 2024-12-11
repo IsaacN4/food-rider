@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+
+html {
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+}
+
+body {
+     
+      height: 100%;
+      width: 100%;
+      background-size: cover;                    
+      background-position: center;              
+      background-repeat: no-repeat;             
+      margin: 0;                                
+      height: 100vh;
+      align-items: center;       
+}
+
+/* Header Start */
+
+.navbar {
+    background-color: #efecec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 29px;
+    font-weight: 450;
+    color: #5656b8;
+    margin-left: 80px;
+}
+
+.navbar a {
+    color: #222224;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px;
+
+}
+
+.login-button {
+    color: #fff;
+    padding: 6px 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #5656b8;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #3b3a3a;
+
+}
+
+.login-button:hover {
+    transform: scale(1.1);
+    background-color: #296e2b;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(31, 14, 14, 0.438); 
+}
+
+.navbar nav {
+    margin-right: 80px;
+
+
+}
+
+/* Header Ends */
+
+
+
+/* Main Start */
+
+.hero-banner h1 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #5656b8;
+
+}
+
+.hero-banner p {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 15px;
+    color:#222224;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.tracking-option {
+    display: flex;
+    justify-content: center;  
+    align-items: center;                 
+    text-align: center; 
+    margin-top: 25px; 
+}
+
+.track-button {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #5656b8;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+}
+
+.track-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(178, 178, 231);
+    color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(31, 14, 14, 0.438); 
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;                  
+    margin: 25px 0 45px 0;
+}
+
+.tracking-map {
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+}
+
+/* Main Ends */
+
+/* Footer Starts */
+
+footer {
+    background-color: #d7cfcf;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;                    
+    background-position: center;              
+    background-repeat: no-repeat;             
+    margin: 0;                        
+
+}
+
+.contact-us {
+    justify-content: center;  
+    align-items: center;                 
+    text-align: center;
+    display: grid;
+
+}
+
+.contact-us h3 {
+    font-size: 28px;
+    padding: 12px;
+    padding-bottom: 15px;
+    font-weight: 450;
+
+
+}
+
+.contact-us p {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 6px 6px;
+
+}
+
+.contact-us p a {
+    text-decoration: none;
+
+
+}
+
+.social-media {
+    margin-top: 15px;
+
+
+}
+
+.social-media h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+
+
+.social-media nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+
+  
+.social-media nav ul li {
+    display: inline-block;
+}
+
+  
+.social-media nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding-bottom: 10px;
+}
+  
+
+.social-media nav ul li a.fa-facebook {
+    color: #3b5998; 
+}
+
+
+.social-media nav ul li a.fa-instagram {
+    color: #e1306c; 
+}
+
+
+.social-media nav ul li a.fa-linkedin-in {
+    color: #0077b5; 
+}
+
+.social-media nav ul li a:hover {
+    transform: translateY(-5px);
+}
+
+.copyright {
+    background-color: #404041;
+    text-align: center;
+}
+
+.copyright {
+    padding: 6px 6px 6px 6px;
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
