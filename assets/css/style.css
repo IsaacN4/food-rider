@@ -217,7 +217,10 @@ h2 {
     width: 800px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(31, 14, 14, 0.438); 
-
+    background-color: #ffffffcf;
+    align-content: center;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 /* Map Section Ends */

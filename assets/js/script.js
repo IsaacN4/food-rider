@@ -43,16 +43,3 @@ new mapboxgl.Marker()
   .addTo(map);
 }
  
-function scrollToContact() {
-     if (contactSection) {
-         contactSection.scrollIntoView( {
-             behavior: 'smooth' });
-        }
-}
- 
-function scrollToImage() {
-     if (orderNow) {
-         orderNow.scrollIntoView( {
-             behavior: 'smooth' });
-        }
-}
