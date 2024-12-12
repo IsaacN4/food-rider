@@ -1,13 +1,19 @@
 'use strict';
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoid2VsbGZjIiwiYSI6ImNscTE5azY3eDAzeGwyaXIycTgyMnM0ZW8ifQ.0Bp9MRAu0DmdRpUI8lnDPg';
 
+const contactSection = document.querySelector('container flex flex-between');
+const orderNow = document.querySelector('image-container');   
+mapboxgl.accessToken = 'pk.eyJ1Ijoid2VsbGZjIiwiYSI6ImNscTE5azY3eDAzeGwyaXIycTgyMnM0ZW8ifQ.0Bp9MRAu0DmdRpUI8lnDPg';
 const trackLocationButton = document.querySelector('.track-button');
 const mapContainer = document.querySelector('.tracking-map');
+
+
 
 trackLocationButton.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(success, error);
 });
+
+
 
 function success(position) {
     const { latitude, longitude } = position.coords;
@@ -24,6 +30,8 @@ function success(position) {
         .addTo(map); 
 }
 
+
+
 function error() {
     console.error('Unable to retrieve location. Using default location.');
 
@@ -39,4 +47,19 @@ function error() {
     new mapboxgl.Marker()
         .setLngLat(defaultCoords)
         .addTo(map);
+}
+
+
+function scrollToContact() {
+    if (contactSection) {
+        contactSection.scrollIntoView( {
+            behavior: 'smooth' });
+    }
+}
+
+function scrollToImage() {
+    if (orderNow) {
+        orderNow.scrollIntoView( {
+            behavior: 'smooth' });
+    }
 }
